@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Guia2;
+package eggprojects.ejercicios;
 
 /**
  *
  * @author Hogar
  */
-public class ejercicio1 {
+public class ejercicio2 {
     
 }

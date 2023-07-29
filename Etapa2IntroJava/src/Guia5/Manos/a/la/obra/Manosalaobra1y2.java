@@ -1,14 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Guia5.Manos.a.la.obra;
 
-/**
- *
- * @author Hogar
- */
 public class Manosalaobra1y2 {
-    
+  public static void main(String[] args) {
+ String[] equipo = {"brisa", "uma", "romina", "angel"};
+ System.out.println("el equipo esta formado por:");
+ for (String nombre:equipo){
+   System.out.println(nombre);  
+      //estan los dos ejercicios de manos a la obra juntos 2*1 :) //
+ }
+}  
 }

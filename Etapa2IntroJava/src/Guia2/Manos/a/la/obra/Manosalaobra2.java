@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Guia2;
+package Guia2.Manos.a.la.obra;
 
 /**
  *
  * @author Hogar
  */
-public class Ejercicio5 {
+public class Manosalaobra2 {
     
 }

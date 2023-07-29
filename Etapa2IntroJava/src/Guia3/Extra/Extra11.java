@@ -1,14 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Guia3.Extra;
 
-/**
- *
- * @author Hogar
- */
+import java.util.Scanner;
+
 public class Extra11 {
-    
+  public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Ingrese un número entero");
+        int numero = scanner.nextInt();
+        int contador = 0;
+        while (numero > 0) {
+            numero /= 10;
+            contador++;
+        }
+        System.out.println("la cantidad de digitos del numero ingresado es :"+contador);
+    }  
 }

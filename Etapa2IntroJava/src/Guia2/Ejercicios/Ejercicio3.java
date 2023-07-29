@@ -1,14 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Guia2.Ejercicios;
 
-/**
- *
- * @author Hogar
- */
+import java.util.Scanner;
+
 public class Ejercicio3 {
-    
+  public static void main(String[] args){  
+   Scanner leer = new Scanner(System.in).useDelimiter("\n");
+   String frase;
+   System.out.println("ingrese una frase:");
+   frase = leer.next(); 
+   System.out.println(frase.toUpperCase());
+   System.out.println(frase.toLowerCase());
+  }  
 }

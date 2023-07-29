@@ -1,14 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Guia2.Manos.a.la.obra;
 
-/**
- *
- * @author Hogar
- */
 public class Manosalaobra2 {
+  public static void main(String[] args){
+   int edad = 18;
+   int numHermanos = 1;
+   String nombre = "brisa";
+   char genero = 'f';
     
+    edad = 18;
+    numHermanos = 1;
+    nombre = "brisa";
+    genero = 'f';
+  }    
 }

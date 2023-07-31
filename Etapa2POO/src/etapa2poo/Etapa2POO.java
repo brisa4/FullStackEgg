@@ -3,12 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Etapa2POO.ENTIDAD;
+package etapa2poo;
 
 /**
  *
  * @author Hogar
  */
-public class HOLA {
+public class Etapa2POO {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+    }
     
 }

@@ -1,14 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Ejercicio1.main;
 
-/**
- *
- * @author Hogar
- */
+import Ejercicio1.entidad.Libro;
+
 public class Main {
-    
+  public static void main(String[] args) {
+        Libro primerLibro = new Libro(12321, "Esta noche digo adios", "Jeremias", 234);
+        Libro segundoLibro = new Libro();
+        
+        segundoLibro.cargarLibro();
+        segundoLibro.mostrarLibro();
+        primerLibro.mostrarLibro();
+    }  
+       
 }

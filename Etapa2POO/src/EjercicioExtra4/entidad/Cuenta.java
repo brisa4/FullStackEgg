@@ -25,7 +25,6 @@ public class Cuenta {
     public void setTitular(String titular) {
         this.titular = titular;
     }
-    
     public void retirar_dinero() {
         Scanner leer = new Scanner(System.in).useDelimiter("\n");
         System.out.println("Ingrese la cantidad de dinero que desea retirar");

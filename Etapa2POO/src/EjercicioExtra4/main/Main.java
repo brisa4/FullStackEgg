@@ -4,10 +4,9 @@ import EjercicioExtra4.entidad.Cuenta;
 
 public class Main {
   public static void main(String[] args) {
-        Cuenta rectangulo = new Cuenta();
+        Cuenta cuenta = new Cuenta(1000, "Jeremias");
 
-        rectangulo.crearRectangulo();
-        rectangulo.calcularSuperficie();
-        rectangulo.calcularPerimetro();
-    }  
+        cuenta.retirar_dinero();
+        cuenta.retirar_dinero();
+    }
 }

@@ -3,41 +3,39 @@ package EjercicioExtra4.entidad;
 import java.util.Scanner;
 
 public class Cuenta {
-  private int base;
-    private int altura;
+   private double saldo;
+    private String titular;
 
     public Cuenta() {
     }
     
-    public Cuenta(int base, int altura) {
-        this.base = base;
-        this.altura = altura;
+    public Cuenta(double saldo, String titular) {
+        this.saldo = saldo;
+        this.titular = titular;
     }
-    public int getBase() {
-        return base;
+    public double getSaldo() {
+        return saldo;
     }
-    public void setBase(int base) {
-        this.base = base;
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
     }
-    public int getAltura() {
-        return altura;
+    public String getTitular() {
+        return titular;
     }
-    public void setAltura(int altura) {
-        this.altura = altura;
+    public void setTitular(String titular) {
+        this.titular = titular;
     }
-    public void crearRectangulo() {
-        Scanner leer = new Scanner(System.in);
-        System.out.println("Ingrese la base");
-        this.base = (leer.nextInt());
-        System.out.println("Ingrese la altura");
-        this.altura = (leer.nextInt());
+    
+    public void retirar_dinero() {
+        Scanner leer = new Scanner(System.in).useDelimiter("\n");
+        System.out.println("Ingrese la cantidad de dinero que desea retirar");
+        double dineroARetirar = leer.nextInt();
+        if (dineroARetirar <= this.saldo) {
+            this.saldo -= dineroARetirar;
+            System.out.println("Se retiró " + dineroARetirar);
+            System.out.println("Su saldo actual es de " + this.saldo);
+        } else {
+            System.out.println("Se retiró " + saldo + " y la cuenta quedó en 0");
+        }
     }
-    public void calcularSuperficie() {
-        int superficie = this.base * this.altura;
-        System.out.println("La superficie del rectángulo es: " + superficie);
-    }
-    public void calcularPerimetro() {
-        int perimetro = (this.base + this.altura) * 2;
-        System.out.println("La superficie del rectángulo es: " + perimetro);
-    }  
 }

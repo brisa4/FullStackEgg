@@ -6,7 +6,6 @@ public class Mes {
     public Mes(String nombre) {
         this.nombre = nombre;
     }
-
     public String getNombre() {
         return nombre;
     }  

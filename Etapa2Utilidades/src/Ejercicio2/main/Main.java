@@ -1,7 +1,7 @@
 package Ejercicio2.main;
 
 import Ejercicio2.entidad.ParDeNumeros;
-import Ejercicio2.serviio.ParDeNumerosServicio;
+import Ejercicio2.servicio.ParDeNumerosServicio;
 
 public class Main {
    public static void main(String[] args) {

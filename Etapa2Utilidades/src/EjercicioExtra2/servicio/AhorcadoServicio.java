@@ -42,7 +42,6 @@ public class AhorcadoServicio {
             }
         } while (true);
     }
-
     public int longitud(String palabra) {
         return palabra.length();
     }

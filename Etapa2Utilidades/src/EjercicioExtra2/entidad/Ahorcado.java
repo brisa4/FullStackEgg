@@ -10,7 +10,6 @@ public class Ahorcado {
         this.letrasEncontradas = letrasEncontradas;
         this.cantidadDeJugadas = cantidadDeJugadas;
     }
-
     public Ahorcado() {
     }
     public char[] getPalabraABuscar() {

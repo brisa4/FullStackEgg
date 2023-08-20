@@ -6,7 +6,6 @@ public class Cadena {
 
     public Cadena() {
     }
-
     public Cadena(String frase) {
         this.frase = frase;
         this.longitudFrase = frase.length();
@@ -23,7 +22,6 @@ public class Cadena {
     public void setLongitudFrase(int longitudFrase) {
         this.longitudFrase = longitudFrase;
     }
-
     @Override
     public String toString() {
         return "cadena1{" + "frase=" + frase + ", longitudFrase=" + longitudFrase + '}';

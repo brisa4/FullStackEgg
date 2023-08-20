@@ -19,7 +19,6 @@ public class FechaServicio {
     public Date fechaActual() {
         return new Date();
     }
-
     public int diferencia(Date fechaNacimiento, Date fechaActual) {
         long milisegundosPorAnio = 1000L * 60 * 60 * 24 * 365;
         long diferenciaMilisegundos = fechaActual.getTime() - fechaNacimiento.getTime();

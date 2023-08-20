@@ -23,7 +23,6 @@ public class CursoServicio {
         curso.setAlumnos(cargarAlumnos(curso.getAlumnos().length));
         return curso;
     }
-
     private String[] cargarAlumnos(int longitudVector) {
         String[] alumnos = new String[longitudVector];
         for (int i = 0; i < alumnos.length; i++) {

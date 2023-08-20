@@ -22,9 +22,7 @@ public class CadenaServicio {
         for (int i = frase.getLongitudFrase(); i > 0; i--) {
 
             a += frase.getFrase().substring(frase.getLongitudFrase(), frase.getLongitudFrase() - i);
-
         }
-
         System.out.println(a + frase.getFrase().substring(0, 1));
     }  
 }

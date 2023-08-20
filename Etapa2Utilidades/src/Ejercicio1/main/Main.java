@@ -11,6 +11,5 @@ public class Main {
 
         cad.mostrarVocales(cadena1);
         cad.invertirFrase(cadena1);
-
     }  
 }

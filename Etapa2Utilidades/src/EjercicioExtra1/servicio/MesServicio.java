@@ -9,7 +9,6 @@ public class MesServicio {
         new Mes("mayo"), new Mes("junio"), new Mes("julio"), new Mes("agosto"),
         new Mes("septiembre"), new Mes("octubre"), new Mes("noviembre"), new Mes("diciembre")
     };
-
     public Mes obtenerMesSecreto() {
         Random random = new Random();
         int indiceMesSecreto = random.nextInt(meses.length);

@@ -8,11 +8,9 @@ public class CantanteFamosoServicio {
         this.nombre = nombre;
         this.discoConMasVentas = discoConMasVentas;
     }
-
     public String getNombre() {
         return nombre;
     }
-
     public String getDiscoConMasVentas() {
         return discoConMasVentas;
     }

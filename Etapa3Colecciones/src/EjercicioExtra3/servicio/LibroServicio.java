@@ -9,7 +9,6 @@ public class LibroServicio {
     public boolean agregarLibro(Libro libro) {
         return libros.add(libro);
     }
-
     public Libro buscarLibro(String titulo) {
         for (Libro libro : libros) {
             if (libro.getTitulo().equalsIgnoreCase(titulo)) {

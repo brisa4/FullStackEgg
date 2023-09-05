@@ -18,8 +18,7 @@ public class Main {
             System.out.println("5. Salir");
             System.out.print("Selecciona una opción: ");
             int opcion = scanner.nextInt();
-            scanner.nextLine();  // Consumir la nueva línea pendiente
-
+            scanner.nextLine();  
             switch (opcion) {
                 case 1:
                     System.out.print("Ingrese el título del libro: ");

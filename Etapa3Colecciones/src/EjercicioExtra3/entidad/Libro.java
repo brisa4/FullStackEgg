@@ -1,7 +1,5 @@
 package EjercicioExtra3.entidad;
 
-
-
 public class Libro {
   private String titulo;
     private String autor;
@@ -13,19 +11,15 @@ public class Libro {
         this.autor = autor;
         this.numEjemplares = numEjemplares;
     }
-
     public String getTitulo() {
         return titulo;
     }
-
     public int getNumEjemplares() {
         return numEjemplares;
     }
-
     public int getNumEjemplaresPrestados() {
         return numEjemplaresPrestados;
     }
-
     public void prestar() {
         if (numEjemplares > numEjemplaresPrestados) {
             numEjemplaresPrestados++;
@@ -34,7 +28,6 @@ public class Libro {
             System.out.println("No quedan ejemplares disponibles para prestar de: " + titulo);
         }
     }
-
     public void devolucion() {
         if (numEjemplaresPrestados > 0) {
             numEjemplaresPrestados--;

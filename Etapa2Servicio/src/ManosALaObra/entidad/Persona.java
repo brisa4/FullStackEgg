@@ -20,17 +20,3 @@ public class Persona {
         return correoElectronico;
     }  
 }
-
-
-ArrayList<Integer> numerosA = new ArrayList();
-int x = 20;
-numerosA.add(x);
-
-HashSet<Integer> numerosB = new HashSet();
-Integer Y = 20;
-numerosB.add(y);
-
-HashMap<Integer, String> alumnos = new HashMap();
-int dni = 34576189
-String nombreAlumno = "pepe"
-alumnos.put(dni, nombreAlumno)

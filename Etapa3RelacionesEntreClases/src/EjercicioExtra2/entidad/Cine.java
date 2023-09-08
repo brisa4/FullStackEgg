@@ -41,9 +41,4 @@ public class Cine {
     public void setSala(Sala sala) {
         this.sala = sala;
     }
-
-    public Object getSala() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-  
 }

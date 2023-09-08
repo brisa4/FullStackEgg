@@ -1,4 +1,4 @@
-package Ejercicio1.entidad.main;
+package Ejercicio1.main;
 
 import Ejercicio1.entidad.Perro;
 import Ejercicio1.entidad.Persona;

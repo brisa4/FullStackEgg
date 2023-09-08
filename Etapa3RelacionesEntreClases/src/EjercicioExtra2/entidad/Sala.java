@@ -47,8 +47,4 @@ public class Sala {
     public void setAsientos(Asiento[][] asientos) {
         this.asientos = asientos;
     }
-
-    public Asiento[][] getAsientos() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 }

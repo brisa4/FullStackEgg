@@ -1,14 +1,24 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package EjercicioExtra3.servicio;
 
-/**
- *
- * @author Hogar
- */
+import EjercicioExtra3.entidad.Persona;
+import java.util.Scanner;
+
 public class PersonaServicio {
-    
+    public Persona registrarPersona() {
+        Scanner leer = new Scanner(System.in).useDelimiter("\n");
+        Persona persona = new Persona();
+        System.out.println("Ingrese el nombre del asegurado");
+        persona.setNombre(leer.next());
+        System.out.println("Ingrese el apellido");
+        persona.setApellido(leer.next());
+        System.out.println("Ingrese el documento");
+        persona.setDocumento(leer.nextInt());
+        System.out.println("Ingrese el mail");
+        persona.setMail(leer.next());
+        System.out.println("Ingrese el domicilio");
+        persona.setDomicilio(leer.next());
+        System.out.println("Ingrese el telefono");
+        persona.setTelefono(leer.nextInt());
+        return persona;
+    }  
 }

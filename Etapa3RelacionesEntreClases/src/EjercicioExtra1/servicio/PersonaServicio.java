@@ -31,7 +31,6 @@ public class PersonaServicio {
 
         return personas;
     }
-
     public void adoptarPerro(ArrayList<Persona> personas, ArrayList<Perro> perros, HashMap<Persona, Perro> adoptar) {
         System.out.println("Listado de perros: ");
         for (Perro perro : perros) {
@@ -41,7 +40,6 @@ public class PersonaServicio {
         for (Persona persona : personas) {
             System.out.println(persona);
         }
-
         Iterator<Persona> itPer = personas.iterator();
         Iterator<Perro> itPerro = perros.iterator();
         boolean noEncontrado = true;
@@ -68,7 +66,6 @@ public class PersonaServicio {
                 System.out.println("El perro elegido no se encuentra en la lista o ya fue adoptado");
             }
         }
-
         for (Map.Entry<Persona, Perro> entry : adoptar.entrySet()) {
             Persona persona = entry.getKey();
             Perro perro = entry.getValue();

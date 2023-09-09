@@ -36,23 +36,18 @@ public class Poliza {
 
     public Poliza() {
     }
-
     public Vehiculo getVehiculo() {
         return vehiculo;
     }
-
     public void setVehiculo(Vehiculo vehiculo) {
         this.vehiculo = vehiculo;
     }
-
     public Persona getPersona() {
         return persona;
     }
-
     public void setPersona(Persona persona) {
         this.persona = persona;
     }
-
     public ArrayList<Cuota> getCantidadCuotas() {
         return cantidadCuotas;
     }
@@ -69,67 +64,51 @@ public class Poliza {
             cuota.setPagado(false);
         }
     }
-
     public int getNumeroPoliza() {
         return numeroPoliza;
     }
-
     public void setNumeroPoliza(int numeroPoliza) {
         this.numeroPoliza = numeroPoliza;
     }
-
     public LocalDate getFechaInicio() {
         return fechaInicio;
     }
-
     public void setFechaInicio(LocalDate fechaInicio) {
         this.fechaInicio = fechaInicio;
     }
-
     public LocalDate getFinPoliza() {
         return finPoliza;
     }
-
     public void setFinPoliza(LocalDate finPoliza) {
         this.finPoliza = finPoliza;
     }
-
     public FormaPago getPago() {
         return pago;
     }
-
     public void setPago(FormaPago pago) {
         this.pago = pago;
     }
-
     public double getMontoTotal() {
         return montoTotal;
     }
-
     public void setMontoTotal(double montoTotal) {
         this.montoTotal = montoTotal;
     }
-
     public boolean isGranizo() {
         return granizo;
     }
-
     public void setGranizo(boolean granizo) {
         this.granizo = granizo;
     }
-
     public double getMontoGranizo() {
         return montoGranizo;
     }
-
     public void setMontoGranizo(double montoGranizo) {
         this.montoGranizo = montoGranizo;
     }
-
     public TipoCobertura getTipoCobertura() {
         return tipoCobertura;
     }
-
     public void setTipoCobertura(TipoCobertura tipoCobertura) {
         this.tipoCobertura = tipoCobertura;
     }  

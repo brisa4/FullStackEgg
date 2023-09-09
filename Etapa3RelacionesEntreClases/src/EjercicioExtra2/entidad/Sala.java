@@ -35,15 +35,12 @@ public class Sala {
             }
         }
     }
-
     public Sala(Asiento[][] asientos) {
         this.asientos = asientos;
     }
-
     public Asiento[][] getAsientos() {
         return asientos;
     }
-
     public void setAsientos(Asiento[][] asientos) {
         this.asientos = asientos;
     }

@@ -4,7 +4,6 @@ import Ejercicio3.entidad.Baraja;
 import java.util.Scanner;
 import Ejercicio3.servicio.BarajaServicio;
 
-
 public class Main {
    public static void main(String[] args) {
         Scanner leer = new Scanner(System.in);

@@ -39,12 +39,8 @@ public class Jugador {
         this.leer = leer;
     }
     Scanner leer = new Scanner(System.in).useDelimiter("\n");
-
     public void disparo(Revolver revolver, Jugador jugador) {
         jugador.setMojado(revolver.mojar());
         revolver.siguienteChorro();
-    }
-    
-    
-    
+    } 
 }

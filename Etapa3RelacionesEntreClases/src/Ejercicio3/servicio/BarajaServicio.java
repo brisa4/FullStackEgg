@@ -22,12 +22,10 @@ public class BarajaServicio {
         baraja.setMazo(mazo);
         return baraja;
     }
-
     public void barajar(Baraja baraja) {
         System.out.println("Se barajó el mazo");
         Collections.shuffle(baraja.getMazo());
     }
-
     public void siguienteCarta(Baraja baraja) {
         ArrayList<Carta> monton = baraja.getMonton();
         if (baraja.getMazo().size() > 1) {
@@ -39,12 +37,10 @@ public class BarajaServicio {
             System.out.println("No quedan más cartas");
         } 
     }
-
     public int cartasDisponibles(Baraja baraja) {
         System.out.println("Quedan " + baraja.getMazo().size() + " cartas disponibles");
         return baraja.getMazo().size();
     }
-
     public void darCartas(Baraja baraja) {
         Scanner leer = new Scanner(System.in).useDelimiter("\n");
         System.out.println("Ingrese el número de cartas que desea tomar");
@@ -57,7 +53,6 @@ public class BarajaServicio {
             }
         }
     }
-
     public void cartasMonton(Baraja baraja) {
         if (baraja.getMonton().isEmpty()) {
             System.out.println("NO salió ninguna carta");
@@ -65,7 +60,6 @@ public class BarajaServicio {
             System.out.println(baraja.getMonton());
         }
     }
-
     public void mostrarBaraja(Baraja baraja) {
         System.out.println(baraja.getMazo());
     }  

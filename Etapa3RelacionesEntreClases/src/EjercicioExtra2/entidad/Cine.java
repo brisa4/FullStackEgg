@@ -17,27 +17,21 @@ public class Cine {
         this.precioEntrada = precioEntrada;
         this.sala = sala;
     }
-
     public Pelicula getPelicula() {
         return pelicula;
     }
-
     public void setPelicula(Pelicula pelicula) {
         this.pelicula = pelicula;
     }
-
     public double getPrecioEntrada() {
         return precioEntrada;
     }
-
     public void setPrecioEntrada(double precioEntrada) {
         this.precioEntrada = precioEntrada;
     }
-
     public Sala getSala() {
         return sala;
     }
-
     public void setSala(Sala sala) {
         this.sala = sala;
     }

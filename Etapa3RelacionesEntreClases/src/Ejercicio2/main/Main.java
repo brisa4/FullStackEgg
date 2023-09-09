@@ -1,4 +1,3 @@
-
 package Ejercicio2.main;
 
 import Ejercicio2.entidad.Juego;

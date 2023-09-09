@@ -8,7 +8,6 @@ public class Perro {
 
     public Perro() {
     }
-
     public Perro(String nombre, String raza, int edad, String tamanio) {
         this.nombre = nombre;
         this.raza = raza;

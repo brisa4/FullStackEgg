@@ -21,43 +21,33 @@ public class Cuota {
 
     public Cuota() {
     }
-
     public int getNumeroCuota() {
         return numeroCuota;
     }
-
     public void setNumeroCuota(int numeroCuota) {
         this.numeroCuota = numeroCuota;
     }
-
     public double getMontoCuota() {
         return montoCuota;
     }
-
     public void setMontoCuota(double montoCuota) {
         this.montoCuota = montoCuota;
     }
-
     public boolean isPagado() {
         return pagado;
     }
-
     public void setPagado(boolean pagado) {
         this.pagado = pagado;
     }
-
     public LocalDate getFechaVecimiento() {
         return fechaVecimiento;
     }
-
     public void setFechaVecimiento(LocalDate fechaVecimiento) {
         this.fechaVecimiento = fechaVecimiento;
     }
-
     public FormaPago getFormaPago() {
         return formaPago;
     }
-
     public void setFormaPago(FormaPago formaPago) {
         this.formaPago = formaPago;
     }  

@@ -15,7 +15,7 @@ public class Main {
         for (int i = 0; i < personas.length; i++) {
             personas[i].setPerro(perros[i]);
         }
-
+        
         for (Persona persona : personas) {
             System.out.println(persona);
         }

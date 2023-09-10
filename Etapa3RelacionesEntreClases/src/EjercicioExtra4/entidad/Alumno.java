@@ -1,7 +1,7 @@
 package EjercicioExtra4.entidad;
 
 public class Alumno {
-  private String nombreCompleto;
+ private String nombreCompleto;
     private String dni;
     private int cantidadVotos;
 
@@ -10,29 +10,24 @@ public class Alumno {
         this.dni = dni;
         this.cantidadVotos = 0;
     }
-
     public String getNombreCompleto() {
         return nombreCompleto;
     }
-
     public String getDni() {
         return dni;
     }
-
     public int getCantidadVotos() {
         return cantidadVotos;
     }
-
     public void incrementarVotos() {
         cantidadVotos++;
     }
-
+    public void setDni(String dni) {
+        this.dni = dni;
+    }
+    
     @Override
     public String toString() {
         return "Alumno: " + nombreCompleto + " (DNI: " + dni + ") - Votos: " + cantidadVotos;
-    }  
-
-    void setDni(String get) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

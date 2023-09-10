@@ -7,10 +7,10 @@ import java.util.Random;
 import java.util.Set;
 
 public class Simulador {
-   public List<Alumno> generarListaAlumnosAleatorios(int cantidad) {
-        List<String> nombres = List.of("Juan", "Maria", "Carlos", "Ana", "Pedro", "Laura", "Diego", "Sofia", "Luis", "Elena");
-        List<String> apellidos = List.of("Perez", "Lopez", "Gonzalez", "Rodriguez", "Martinez", "Fernandez", "Sanchez", "Torres");
+ private static final String[] NOMBRES = {"Juan", "Maria", "Carlos", "Ana", "Pedro", "Laura", "Diego", "Sofia", "Luis", "Elena"};
+    private static final String[] APELLIDOS = {"Perez", "Lopez", "Gonzalez", "Rodriguez", "Martinez", "Fernandez", "Sanchez", "Torres"};
 
+    public List<Alumno> generarListaAlumnosAleatorios(int cantidad) {
         Random rand = new Random();
         Set<String> nombresCompletosUsados = new HashSet<>();
         List<Alumno> listaAlumnos = new ArrayList<>();
@@ -18,8 +18,8 @@ public class Simulador {
         while (listaAlumnos.size() < cantidad) {
             String nombreCompleto;
             do {
-                String nombre = nombres.get(rand.nextInt(nombres.size()));
-                String apellido = apellidos.get(rand.nextInt(apellidos.size()));
+                String nombre = NOMBRES[rand.nextInt(NOMBRES.length)];
+                String apellido = APELLIDOS[rand.nextInt(APELLIDOS.length)];
                 nombreCompleto = nombre + " " + apellido;
             } while (nombresCompletosUsados.contains(nombreCompleto));
 
@@ -29,7 +29,6 @@ public class Simulador {
 
         return listaAlumnos;
     }
-
     public List<String> generarListaDnis(int cantidad) {
         List<String> listaDnis = new ArrayList<>();
         Random rand = new Random();
@@ -39,7 +38,6 @@ public class Simulador {
         }
         return listaDnis;
     }
-
     public void asignarNombresYDnis(List<Alumno> alumnos, List<String> dnis) {
         if (alumnos.size() != dnis.size()) {
             throw new IllegalArgumentException("La cantidad de alumnos y DNI debe ser la misma.");
@@ -49,13 +47,11 @@ public class Simulador {
             alumnos.get(i).setDni(dnis.get(i));
         }
     }
-
     public void imprimirListaAlumnos(List<Alumno> alumnos) {
         for (Alumno alumno : alumnos) {
             System.out.println(alumno);
         }
     }
-
     public List<Voto> votacion(List<Alumno> listaAlumnos) {
         List<Voto> votos = new ArrayList<>();
         Random rand = new Random();
@@ -74,29 +70,27 @@ public class Simulador {
             voto.getAlumnosVotados().addAll(votados);
             votos.add(voto);
         }
-
         return votos;
     }
-
     public void mostrarResultadosVotacion(List<Voto> votos) {
         for (Voto voto : votos) {
             System.out.println(voto);
         }
     }
-
     public void contarVotos(List<Alumno> alumnos) {
         alumnos.sort((a1, a2) -> Integer.compare(a2.getCantidadVotos(), a1.getCantidadVotos()));
 
         System.out.println("\nFacilitadores:");
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < Math.min(5, alumnos.size()); i++) {
             Alumno facilitador = alumnos.get(i);
             System.out.println("Facilitador " + (i + 1) + ": " + facilitador);
         }
-
-        System.out.println("\nFacilitadores Suplentes:");
-        for (int i = 5; i < 10; i++) {
-            Alumno suplente = alumnos.get(i);
-            System.out.println("Suplente " + (i - 4) + ": " + suplente);
+        if (alumnos.size() > 5) {
+            System.out.println("\nFacilitadores Suplentes:");
+            for (int i = 5; i < Math.min(10, alumnos.size()); i++) {
+                Alumno suplente = alumnos.get(i);
+                System.out.println("Suplente " + (i - 4) + ": " + suplente);
+            }
         }
-    }  
+    }
 }

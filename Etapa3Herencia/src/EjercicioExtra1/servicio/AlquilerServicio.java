@@ -56,7 +56,6 @@ public class AlquilerServicio implements AlquierInter {
                 break;
         }
         System.out.println("El alquiler del barco es un total de " + (calculoAlquiler(alquiler)));
-
     }
     @Override
     public double calculoAlquiler(Alquiler alquiler) {

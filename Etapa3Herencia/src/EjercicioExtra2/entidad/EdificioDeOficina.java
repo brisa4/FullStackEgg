@@ -11,17 +11,14 @@ public class EdificioDeOficina extends Edificio {
         this.personasPorOficina = personasPorOficina;
         this.numeroPisos = numeroPisos;
     }
-
     @Override
     public double calcularSuperficie() {
         return 2 * (alto * largo + alto * ancho + largo * ancho);
     }
-
     @Override
     public double calcularVolumen() {
         return alto * largo * ancho;
     }
-
     public int cantPersonas() {
         int personasPorPiso = numeroOficina * personasPorOficina;
         int personasEnEdificio = personasPorPiso * numeroPisos;

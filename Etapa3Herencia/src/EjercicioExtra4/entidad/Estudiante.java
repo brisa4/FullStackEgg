@@ -1,6 +1,5 @@
 package EjercicioExtra4.entidad;
 
-
  public class Estudiante extends Persona {
     private String curso;
 
@@ -9,18 +8,15 @@ package EjercicioExtra4.entidad;
         super(nombre, apellidos, numeroIdentificacion, estadoCivil);
         this.curso = curso;
     }
-
     public String getCurso() {
         return curso;
     }
-
     public void setCurso(String curso) {
         this.curso = curso;
     }
     public void matricularEnCurso(String nuevoCurso) {
         this.curso = nuevoCurso;
     }
-
     @Override
     public String toString() {
         return super.toString() +

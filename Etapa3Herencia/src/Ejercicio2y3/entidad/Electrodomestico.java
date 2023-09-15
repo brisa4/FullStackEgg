@@ -1,6 +1,5 @@
 package Ejercicio2y3.entidad;
 
-
 public class Electrodomestico {
   protected double precio;
     protected String color;

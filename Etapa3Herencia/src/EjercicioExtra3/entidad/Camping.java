@@ -13,29 +13,22 @@ public class Camping extends AlojamientoExtraHotelero {
         this.cantidadBanios = cantidadBanios;
         this.tieneRestaurante = tieneRestaurante;
     }
-
     public int getCapacidadMaximaCarpas() {
         return capacidadMaximaCarpas;
     }
-
     public void setCapacidadMaximaCarpas(int capacidadMaximaCarpas) {
         this.capacidadMaximaCarpas = capacidadMaximaCarpas;
     }
-
     public int getCantidadBanios() {
         return cantidadBanios;
     }
-
     public void setCantidadBanios(int cantidadBanios) {
         this.cantidadBanios = cantidadBanios;
     }
-
     public boolean isTieneRestaurante() {
         return tieneRestaurante;
     }
-
     public void setTieneRestaurante(boolean tieneRestaurante) {
         this.tieneRestaurante = tieneRestaurante;
     }
-
 }

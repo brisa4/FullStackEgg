@@ -3,7 +3,6 @@ package Ejercicio4.entidad;
 import Ejercicio4.servicio.CalculosFormas;
 
 public class Rectangulo implements CalculosFormas {
-
     private double base;
     private double altura;
 

@@ -4,7 +4,6 @@ import EjercicioExtra4.entidad.Estudiante;
 import EjercicioExtra4.entidad.Profesor;
 import EjercicioExtra4.servicio.PersonalServicio;
 
-
 public class Main {
   public static void main(String[] args) {
 

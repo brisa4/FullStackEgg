@@ -6,7 +6,6 @@ import EjercicioExtra3.entidad.Residencia;
 import EjercicioExtra3.servicio.AlojamientoServicio;
 import java.util.List;
 
-
 public class Main {
   public static void main(String[] args) {
         AlojamientoServicio consulta = new AlojamientoServicio();
@@ -26,12 +25,10 @@ public class Main {
         for (Hotel hotel : hotelesOrdenados) {
             System.out.println("Nombre: " + hotel.getNombre() + ", Precio: " + hotel.getPrecioHabitacion());
         }
-
         System.out.println("\nCampings con restaurante:");
         for (Camping camping : campingsConRestaurante) {
             System.out.println("Nombre: " + camping.getNombre());
         }
-
         System.out.println("\nResidencias con descuento:");
         for (Residencia residencia : residenciasConDescuento) {
             System.out.println("Nombre: " + residencia.getNombre());

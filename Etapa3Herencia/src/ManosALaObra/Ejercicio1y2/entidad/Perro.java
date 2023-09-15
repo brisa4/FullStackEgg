@@ -1,4 +1,4 @@
-package ManosALaObra.Ejercicio1.entidad;
+package ManosALaObra.Ejercicio1y2.entidad;
 
 public class Perro extends Animal {
 

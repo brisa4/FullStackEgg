@@ -1,7 +1,6 @@
 package Ejercicio2y3.entidad;
 
 public class Televisor extends Electrodomestico {
-
     private int resolucion;
     private boolean sintonizadorTDT;
 

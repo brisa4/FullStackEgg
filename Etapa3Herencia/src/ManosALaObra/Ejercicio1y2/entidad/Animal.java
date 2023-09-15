@@ -1,6 +1,6 @@
-package ManosALaObra.Ejercicio1.entidad;
+package ManosALaObra.Ejercicio1y2.entidad;
 
-import ManosALaObra.Ejercicio1.interfaces.IAnimalInterface;
+import ManosALaObra.Ejercicio1y2.interfaces.IAnimalInterface;
 
 public class Animal implements IAnimalInterface {
 

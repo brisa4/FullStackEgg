@@ -31,7 +31,6 @@ public class Main {
                 EdificioDeOficina edificioDeOficina = (EdificioDeOficina) edificio;
                 System.out.println("Cantidad de personas en un piso: " + edificioDeOficina.cantPersonas());
             }
-
             System.out.println();
         }
     }

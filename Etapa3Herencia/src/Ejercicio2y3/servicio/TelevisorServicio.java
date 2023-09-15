@@ -16,7 +16,6 @@ public class TelevisorServicio extends ElectrodomesticoServicio {
         }
         return new Televisor(elec.getPrecio(), elec.getColor(), elec.getConsumoEnergetico(), elec.getPeso(), pulgadas, sintonizador);
     }
-
     public double precioFinal(Televisor televisor) {
         super.precioFinal(televisor);
         if (televisor.getResolucion() > 40) {
@@ -25,7 +24,6 @@ public class TelevisorServicio extends ElectrodomesticoServicio {
         if (televisor.isSintonizadorTDT()) {
             televisor.setPrecio(televisor.getPrecio() + 500);
         }
-
         return televisor.getPrecio();
     }
 }

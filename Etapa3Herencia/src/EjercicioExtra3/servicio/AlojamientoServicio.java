@@ -15,15 +15,12 @@ public class AlojamientoServicio {
     public AlojamientoServicio() {
         alojamientos = new ArrayList<>();
     }
-
     public void agregarAlojamiento(Alojamiento alojamiento) {
         alojamientos.add(alojamiento);
     }
-
     public List<Alojamiento> obtenerTodosLosAlojamientos() {
         return alojamientos;
     }
-
     public List<Hotel> obtenerHotelesDeMasCaroAMasBarato() {
         List<Hotel> hoteles = new ArrayList<>();
         for (Alojamiento alojamiento : alojamientos) {
@@ -31,7 +28,6 @@ public class AlojamientoServicio {
                 hoteles.add((Hotel) alojamiento);
             }
         }
-
         Collections.sort(hoteles, new Comparator<Hotel>() {
             public int compare(Hotel hotel1, Hotel hotel2) {
                 return Double.compare(hotel2.getPrecioHabitacion(), hotel1.getPrecioHabitacion());
@@ -40,7 +36,6 @@ public class AlojamientoServicio {
 
         return hoteles;
     }
-
     public List<Camping> obtenerCampingsConRestaurante() {
         List<Camping> campingsConRestaurante = new ArrayList<>();
         for (Alojamiento alojamiento : alojamientos) {
@@ -53,7 +48,6 @@ public class AlojamientoServicio {
         }
         return campingsConRestaurante;
     }
-
     public List<Residencia> obtenerResidenciasConDescuento() {
         List<Residencia> residenciasConDescuento = new ArrayList<>();
         for (Alojamiento alojamiento : alojamientos) {

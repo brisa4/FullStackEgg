@@ -1,6 +1,5 @@
 package EjercicioExtra3.entidad;
 
-
  public class Residencia extends AlojamientoExtraHotelero {
     private int cantidadHabitaciones;
     private boolean descuentoGremios;
@@ -14,29 +13,22 @@ package EjercicioExtra3.entidad;
         this.descuentoGremios = descuentoGremios;
         this.tieneCampoDeportivo = tieneCampoDeportivo;
     }
-
     public int getCantidadHabitaciones() {
         return cantidadHabitaciones;
     }
-
     public void setCantidadHabitaciones(int cantidadHabitaciones) {
         this.cantidadHabitaciones = cantidadHabitaciones;
     }
-
     public boolean isDescuentoGremios() {
         return descuentoGremios;
     }
-
     public void setDescuentoGremios(boolean descuentoGremios) {
         this.descuentoGremios = descuentoGremios;
     }
-
     public boolean isTieneCampoDeportivo() {
         return tieneCampoDeportivo;
     }
-
     public void setTieneCampoDeportivo(boolean tieneCampoDeportivo) {
         this.tieneCampoDeportivo = tieneCampoDeportivo;
     }
-    
 }

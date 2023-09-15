@@ -1,8 +1,8 @@
-package ManosALaObra.Ejercicio1.main;
+package ManosALaObra.Ejercicio1y2.main;
 
-import ManosALaObra.Ejercicio1.entidad.Animal;
-import ManosALaObra.Ejercicio1.entidad.Gato;
-import ManosALaObra.Ejercicio1.entidad.Perro;
+import ManosALaObra.Ejercicio1y2.entidad.Animal;
+import ManosALaObra.Ejercicio1y2.entidad.Gato;
+import ManosALaObra.Ejercicio1y2.entidad.Perro;
 import java.util.ArrayList;
 
 public class Main {

@@ -1,9 +1,7 @@
 package Ejercicio2y3.entidad;
 
 public class Lavadora extends Electrodomestico {
-
     private int carga;
-
     public Lavadora() {
     }
     public Lavadora(double precio, String color, char consumoEnergetico, int peso, int carga) {

@@ -1,6 +1,5 @@
 package EjercicioExtra3.entidad;
 
-
 public class Alojamiento {
   private String nombre;
     private String direccion;
@@ -13,6 +12,7 @@ public class Alojamiento {
         this.localidad = localidad;
         this.gerente = gerente;
     }
+
     public String getNombre() {
         return nombre;
     }
@@ -29,14 +29,6 @@ public class Alojamiento {
         this.direccion = direccion;
     }
 
-    public String getLocalidad() {
-        return localidad;
-    }
-
-    public void setLocalidad(String localidad) {
-        this.localidad = localidad;
-    }
-
     public String getGerente() {
         return gerente;
     }
@@ -44,4 +36,5 @@ public class Alojamiento {
     public void setGerente(String gerente) {
         this.gerente = gerente;
     }
+  
 }

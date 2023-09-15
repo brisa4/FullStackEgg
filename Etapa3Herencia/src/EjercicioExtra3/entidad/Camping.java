@@ -13,7 +13,8 @@ public class Camping extends AlojamientoExtraHotelero {
         this.cantidadBanios = cantidadBanios;
         this.tieneRestaurante = tieneRestaurante;
     }
-public int getCapacidadMaximaCarpas() {
+
+    public int getCapacidadMaximaCarpas() {
         return capacidadMaximaCarpas;
     }
 
@@ -37,7 +38,4 @@ public int getCapacidadMaximaCarpas() {
         this.tieneRestaurante = tieneRestaurante;
     }
 
-    public boolean getNombre() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 }

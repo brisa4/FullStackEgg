@@ -1,28 +1,31 @@
 package EjercicioExtra3.entidad;
 
-public abstract class Hotel extends Alojamiento {
+public class Hotel extends Alojamiento {
     private int cantidadHabitaciones;
     private int numeroCamas;
     private int cantidadPisos;
-    private boolean gimnasio;
-    private String nombreRestaurante;
+    private String restauranteNombre;
     private int capacidadRestaurante;
+    private char tipoGimnasio; // 'A' o 'B'
+    private int cantidadLimosinas;
+    private double precioHabitacion;
 
     public Hotel(String nombre, String direccion, String localidad, String gerente,
                  int cantidadHabitaciones, int numeroCamas, int cantidadPisos,
-                 boolean gimnasio, String nombreRestaurante, int capacidadRestaurante) {
+                 String restauranteNombre, int capacidadRestaurante, char tipoGimnasio,
+                 int cantidadLimosinas) {
         super(nombre, direccion, localidad, gerente);
         this.cantidadHabitaciones = cantidadHabitaciones;
         this.numeroCamas = numeroCamas;
         this.cantidadPisos = cantidadPisos;
-        this.gimnasio = gimnasio;
-        this.nombreRestaurante = nombreRestaurante;
+        this.restauranteNombre = restauranteNombre;
         this.capacidadRestaurante = capacidadRestaurante;
+        this.tipoGimnasio = tipoGimnasio;
+        this.cantidadLimosinas = cantidadLimosinas;
+        calcularPrecioHabitacion();
     }
 
-    public abstract double calcularPrecioHabitacion();
-
-   public int getCantidadHabitaciones() {
+    public int getCantidadHabitaciones() {
         return cantidadHabitaciones;
     }
 
@@ -46,20 +49,12 @@ public abstract class Hotel extends Alojamiento {
         this.cantidadPisos = cantidadPisos;
     }
 
-    public boolean isGimnasio() {
-        return gimnasio;
+    public String getRestauranteNombre() {
+        return restauranteNombre;
     }
 
-    public void setGimnasio(boolean gimnasio) {
-        this.gimnasio = gimnasio;
-    }
-
-    public String getNombreRestaurante() {
-        return nombreRestaurante;
-    }
-
-    public void setNombreRestaurante(String nombreRestaurante) {
-        this.nombreRestaurante = nombreRestaurante;
+    public void setRestauranteNombre(String restauranteNombre) {
+        this.restauranteNombre = restauranteNombre;
     }
 
     public int getCapacidadRestaurante() {
@@ -68,5 +63,33 @@ public abstract class Hotel extends Alojamiento {
 
     public void setCapacidadRestaurante(int capacidadRestaurante) {
         this.capacidadRestaurante = capacidadRestaurante;
+    }
+
+    public char getTipoGimnasio() {
+        return tipoGimnasio;
+    }
+
+    public void setTipoGimnasio(char tipoGimnasio) {
+        this.tipoGimnasio = tipoGimnasio;
+    }
+
+    public int getCantidadLimosinas() {
+        return cantidadLimosinas;
+    }
+
+    public void setCantidadLimosinas(int cantidadLimosinas) {
+        this.cantidadLimosinas = cantidadLimosinas;
+    }
+
+    public double getPrecioHabitacion() {
+        return precioHabitacion;
+    }
+
+    public void setPrecioHabitacion(double precioHabitacion) {
+        this.precioHabitacion = precioHabitacion;
+    }
+
+   public void calcularPrecioHabitacion() {
+        // Implementa la fórmula de cálculo del precio aquí
     } 
 }

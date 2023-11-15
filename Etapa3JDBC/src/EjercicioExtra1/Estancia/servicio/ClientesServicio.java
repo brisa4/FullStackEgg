@@ -5,8 +5,7 @@ import EjercicioExtra1.Estancia.persistencia.ClientesDAO;
 import java.util.List;
 
 public class ClientesServicio {
-    private ClientesDAO clientesDAO;
-
+    private final ClientesDAO clientesDAO;
     public ClientesServicio() {
         this.clientesDAO = new ClientesDAO();  
     }
@@ -18,10 +17,10 @@ public class ClientesServicio {
     }
     public void agregarCliente(Clientes cliente) throws Exception {
     }
-    public void actualizarCliente(Cliente cliente) throws Exception {
+    public void actualizarCliente(Clientes cliente) throws Exception {
     }
     public void eliminarCliente(int id) throws Exception {
-        clientesDAO.eliminarCliente(id);
+        clientesDAO.eliminarClientes(id);
     }
 }
 

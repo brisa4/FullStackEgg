@@ -27,7 +27,6 @@ public Familia(int idFamilia, String nombre, int edadMinima, int edadMaxima, int
         this.email = email;
         this.idCasaFamilia = idCasaFamilia;
     }
-
     public int getIdFamilia() {
         return idFamilia;
     }
@@ -70,9 +69,7 @@ public Familia(int idFamilia, String nombre, int edadMinima, int edadMaxima, int
     public void setIdCasaFamilia(int idCasaFamilia) {
         this.idCasaFamilia = idCasaFamilia;
     }
-
     public void setId(int aInt) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
 }

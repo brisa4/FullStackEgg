@@ -97,8 +97,6 @@ public class ProductoDAO extends DAO {
             insertarModificarEliminar(sql);
         } catch (MySQLIntegrityConstraintViolationException e) {
             System.out.println("Error: El código de fabricante no existe en la base de datos. Por favor, introduce un código de fabricante válido.");
-        } catch (Exception e) {
-            throw e;
         }
     }
     public void editarProducto(Producto producto) {

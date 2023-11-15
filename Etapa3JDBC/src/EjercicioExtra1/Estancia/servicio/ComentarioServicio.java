@@ -11,23 +11,18 @@ public class ComentarioServicio {
     public ComentarioServicio(Connection connection) {
         this.comentarioDAO = new ComentarioDAO(connection);
     }
-
     public Comentario obtenerComentarioPorId(int id) {
         return comentarioDAO.getComentarioById(id); // Manejo de excepciones, log o rethrow según sea necesario
     }
-
     public List<Comentario> obtenerComentariosDeCasa(int idCasa) {
         return comentarioDAO.getComentariosByCasaId(idCasa); // Manejo de excepciones, log o rethrow según sea necesario
     }
-
     public boolean agregarComentario(Comentario comentario) {
         return comentarioDAO.insertComentario(comentario); // Manejo de excepciones, log o rethrow según sea necesario
     }
-
     public boolean actualizarComentario(Comentario comentario) {
         return comentarioDAO.updateComentario(comentario); // Manejo de excepciones, log o rethrow según sea necesario
     }
-
     public boolean eliminarComentario(int id) {
         return comentarioDAO.deleteComentario(id); // Manejo de excepciones, log o rethrow según sea necesario
     }

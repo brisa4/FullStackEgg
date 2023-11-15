@@ -39,7 +39,6 @@ public class CasaDAO {
         }
         return casa;
     }
-
     public List<Casa> getAllCasas() {
         List<Casa> casasList = new ArrayList<>();
         String query = "SELECT * FROM casas";
@@ -68,7 +67,6 @@ public class CasaDAO {
         }
         return casasList;
     }
-
     public boolean insertCasa(Casa casa) {
         String query = "INSERT INTO casas (calle, numero, codigo_postal, ciudad, pais, fecha_desde, fecha_hasta, tiempo_minimo, tiempo_maximo, precio_habitacion, tipo_vivienda) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
@@ -90,7 +88,6 @@ public class CasaDAO {
             return false;
         }
     }
-
     public boolean updateCasa(Casa casa) {
         String query = "UPDATE casas SET calle = ?, numero = ?, codigo_postal = ?, ciudad = ?, pais = ?, fecha_desde = ?, fecha_hasta = ?, tiempo_minimo = ?, tiempo_maximo = ?, precio_habitacion = ?, tipo_vivienda = ? WHERE id_casa = ?";
 
@@ -114,7 +111,6 @@ public class CasaDAO {
             return false;
         }
     }
-
     public boolean deleteCasa(int id) {
         String query = "DELETE FROM casas WHERE id_casa = ?";
 

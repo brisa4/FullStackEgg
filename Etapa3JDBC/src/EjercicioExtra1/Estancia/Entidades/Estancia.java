@@ -26,7 +26,6 @@ public Estancia(int idEstancia, int idCliente, int idCasa, String nombreHuesped,
         this.fechaDesde = fechaDesde;
         this.fechaHasta = fechaHasta;
     }    
-
     public int getIdEstancia() {
         return idEstancia;
     }
@@ -63,11 +62,9 @@ public Estancia(int idEstancia, int idCliente, int idCasa, String nombreHuesped,
     public void setFechaHasta(Date fechaHasta) {
         this.fechaHasta = fechaHasta;
     }
-
     public int getId() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
     public void setId(int aInt) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }

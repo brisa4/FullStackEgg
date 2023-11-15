@@ -5,7 +5,7 @@ import EjercicioExtra1.Estancia.persistencia.FamiliaDAO;
 import java.util.List;
 
 public class FamiliaServicio {
-  private FamiliaDAO familiaDAO;
+  private final FamiliaDAO familiaDAO;
 
     public FamiliaServicio() {
         this.familiaDAO = new FamiliaDAO(); 

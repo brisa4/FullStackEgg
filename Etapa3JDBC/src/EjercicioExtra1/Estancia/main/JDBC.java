@@ -21,7 +21,6 @@ public class JDBC {
             System.out.println("j) Insertar nuevas estancias verificando disponibilidad.");
             System.out.println("k) Salir");
             System.out.print("Elija una opción (a-k): ");
-
             String opcion = scanner.nextLine();
 
             switch (opcion) {

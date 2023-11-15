@@ -3,7 +3,6 @@ package EjercicioExtra1.Estancia.persistencia;
 import EjercicioExtra1.Estancia.Entidades.Casa;
 import EjercicioExtra1.Estancia.Entidades.Clientes;
 import EjercicioExtra1.Estancia.Entidades.Estancia;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -102,41 +101,31 @@ public class EstanciaDAO {
             return false;
         }
     }
-
     public List<Casa> getCasasByEstanciaId(int idEstancia) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
     public List<Clientes> getClientesByEstanciaId(int idEstancia) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
     public boolean deleteEstancia(int id) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
     public boolean updateEstancia(Estancia estancia) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
     public boolean insertEstancia(Estancia estancia) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
     public List<Estancia> getEstanciasByClienteId(int idCliente) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
     public Estancia getEstanciaById(int id) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
     private static class Date {
-
         private static java.sql.Date valueOf(java.util.Date fechaDesde) {
             throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         }
-
         public Date() {
         }
     }

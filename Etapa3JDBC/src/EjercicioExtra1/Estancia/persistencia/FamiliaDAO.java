@@ -10,7 +10,6 @@ public class FamiliaDAO {
     public FamiliaDAO(Connection connection) {
         this.connection = connection;
     }
-
     public FamiliaDAO() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
@@ -47,29 +46,23 @@ public class FamiliaDAO {
     familia.setEmail(resultSet.getString("email"));
     familias.add(familia);
 }
-
         } catch (SQLException e) {
             e.printStackTrace();
         }
         return familias;
     }
-
     public Familia obtenerFamiliaPorId(int id) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
     public List<Familia> obtenerTodasLasFamilias() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
     public void agregarFamilia(Familia familia) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
     public void actualizarFamilia(Familia familia) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
     public void eliminarFamilia(int id) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }

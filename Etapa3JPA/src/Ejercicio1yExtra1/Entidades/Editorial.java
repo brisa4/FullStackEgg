@@ -8,7 +8,6 @@ import javax.persistence.Id;
 
 @Entity
 public class Editorial implements Serializable {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;

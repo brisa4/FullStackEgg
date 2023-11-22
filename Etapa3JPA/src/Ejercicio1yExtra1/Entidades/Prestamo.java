@@ -12,7 +12,6 @@ import javax.persistence.TemporalType;
 
 @Entity
 public class Prestamo implements Serializable {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;

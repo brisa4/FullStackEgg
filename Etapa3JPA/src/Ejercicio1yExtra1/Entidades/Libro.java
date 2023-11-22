@@ -7,7 +7,6 @@ import javax.persistence.ManyToOne;
 
 @Entity
 public class Libro implements Serializable {
-
     @Id
     private long ISBN;
     private String titulo;

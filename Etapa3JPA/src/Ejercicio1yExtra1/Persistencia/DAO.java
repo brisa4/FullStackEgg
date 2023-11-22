@@ -5,27 +5,22 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
 public abstract class DAO<T> {
-
     private final EntityManagerFactory emf;
     protected EntityManager em;
-
     public DAO() {
         this.emf = Persistence.createEntityManagerFactory("EjercicioPU");
         this.em = emf.createEntityManager();
     }
-
     protected void conectarBase() {
         if (!em.isOpen()) {
             em = emf.createEntityManager();
         }
     }
-
     protected void desconectarBase() {
         if (em.isOpen()) {
             em.close();
         }
     }
-
     protected void persistirEntidad(T object) {
         try {
             conectarBase();
@@ -41,7 +36,6 @@ public abstract class DAO<T> {
             desconectarBase();
         }
     }
-
     protected void actualizarEntidad(T object) {
         try {
             conectarBase();
@@ -57,7 +51,6 @@ public abstract class DAO<T> {
             desconectarBase();
         }
     }
-
     protected void borrarEntidad(T object) {
         try {
             conectarBase();

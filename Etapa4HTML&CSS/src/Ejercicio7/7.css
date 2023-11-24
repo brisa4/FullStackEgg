@@ -1,10 +1,16 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 23/11/2023, 21:11:43
-    Author     : Hogar
-*/
+body {
+  background-color: aquamarine;
+}
+
+h1,
+h2 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    color: blue;
+    text-align: left;
+}
 

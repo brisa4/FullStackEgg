@@ -1,10 +1,50 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 27/11/2023, 22:56:40
-    Author     : Hogar
-*/
+body {
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            border: 1px solid #333;
+        }
+
+        th, td {
+            text-align: center;
+            padding: 8px;
+            border: 1px solid #333;
+        }
+
+        th {
+            background-color: #f1eeee;
+        }
+
+        tr:nth-child(even) {
+            background-color: #FFFFCC;
+        }
+
+        th[scope="row"] {
+            background-image: url('fondo_gris.gif');
+            background-repeat: no-repeat;
+            background-position: right center;
+            padding-right: 20px;
+            background-color: #e6f3ff;
+        }
+
+        th[scope="col"] {
+            background-position: top center;
+            
+        }
+
+        th[scope="col"]:nth-child(2) {
+            background-image: url('dolar.png');
+        }
+
+        th[scope="col"]:nth-child(3) {
+            background-image: url('yen.png');
+        }
+
+        th[scope="col"]:nth-child(4) {
+            background-image: url('libra.png'); 
+        }
 

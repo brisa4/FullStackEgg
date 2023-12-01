@@ -1,16 +1,303 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página con Bootstrap</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../Ejercicio7/7.css" type="text/css"/>
+
+</head>
+<body>
+
+  <div class="container mt-5">
+
+    <h1>Encabezado H1</h1>
+    <p>Párrafo del encabezado H1.</p>
+
+
+    <h2 class="mt-5">Encabezado H2</h2>
+    <p>Párrafo del encabezado H2.</p>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
 </html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabla de Productos</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+  <div class="container mt-5">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">NOMBRE</th>
+          <th scope="col">PRECIO</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr>
+          <td>producto1</td>
+          <td>10000</td>
+        </tr>
+        <tr>
+          <td>producto2</td>
+          <td>10000</td>
+        </tr>
+        <tr>
+          <td>producto3</td>
+          <td>10000</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabla de Productos con Bootstrap</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">NOMBRE</th>
+          <th scope="col">PRECIO</th>
+          <th scope="col">DETALLE</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>producto1</td>
+          <td>10000</td>
+          <td><a href="#" class="btn btn-primary">Ver Producto</a></td>
+        </tr>
+        <tr>
+          <td>producto2</td>
+          <td>10000</td>
+          <td><a href="#" class="btn btn-primary">Ver Producto</a></td>
+        </tr>
+        <tr>
+          <td>producto3</td>
+          <td>10000</td>
+          <td><a href="#" class="btn btn-primary">Ver Producto</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Registro</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1>Formulario Registro</h1>
+    <form>
+      <div class="form-group">
+        <label for="nombre">Email:</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Ingrese su mail">
+      </div>
+      <div class="form-group">
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" class="form-control" id="contrasena" placeholder="Ingrese su contraseña">
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="recordarContrasena">
+        <label class="form-check-label" for="recordarContrasena">Recordar Contraseña</label>
+      </div>
+      <br>
+      <button type="submit" class="btn btn-primary">Registrarse</button>
+    </form>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listas con Bootstrap</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1>Listas con Bootstrap</h1>
+    <div class="mb-4">
+      <h2>Lista con Viñetas Personalizadas</h2>
+      <ul class="list-unstyled">
+        <li><i class="fas fa-check-circle text-success"></i> Aspecto personalizado 1</li>
+        <li><i class="fas fa-check-circle text-success"></i> Aspecto personalizado 2</li>
+        <li><i class="fas fa-check-circle text-success"></i> Aspecto personalizado 3</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Lista Vertical de Enlaces</h2>
+      <ul class="list-unstyled">
+        <li><a href="#">Página 1</a></li>
+        <li><a href="#">Página 2</a></li>
+        <li><a href="#">Página 3</a></li>
+      </ul>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Ejercicio formatear tabla</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<table summary="Tipos de cambio">
+	<tr>
+		<th scope="col">Cambio</th>
+		<th scope="col">Compra</th>
+		<th scope="col">Venta</th>
+		<th scope="col">M&iacute;nimo</th>
+		<th scope="col">M&iacute;nimo</th>
+	</tr>
+	<tr>
+		<th scope="row"><i class="fa-solid fa-euro-sign" style="color: #eeb758;"></i>Euro/Dolar</th>
+		<td>1.2524</td>
+		<td>1.2527</td>
+		<td>1.2539</td>
+		<td>1.2488</td>
+	</tr>
+	<tr>
+		<th scope="row"><i class="fa-solid fa-dollar-sign" style="color: #73d56c;"></i>Dolar/Yen</th>
+		<td>119.01</td>
+		<td>119.05</td>
+		<td>119.82</td>
+		<td>119.82</td>
+	</tr>
+	<tr>
+		<th scope="row"><i class="fa-solid fa-sterling-sign" style="color: #648dd3;"></i>Libra/Dolar</th>
+		<td>1.8606</td>
+		<td>1.8611</td>
+		<td>1.8651</td>
+		<td>1.8522</td>
+	</tr>
+	<tr>
+		<th scope="row"><i class="fa-solid fa-yen-sign" style="color: #447446;"></i>Euro/Yen</th>
+		<td>149.09</td>
+		<td>149.13</td>
+		<td>149.79</td>
+		<td>148.96</td>
+	</tr>
+</table>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+}
+
+th, td {
+    text-align: center;
+    padding: 8px;
+    border: 1px solid #333;
+}
+
+th {
+    background-color: #f1eeee;
+}
+
+tr:nth-child(even) {
+    background-color: #FFFFCC;
+}
+
+th[scope="row"] {
+    background-image: url('fondo_gris.gif');
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 20px;
+    background-color: #e6f3ff;
+}
+
+th[scope="col"] {
+    background-position: top center;
+    
+}
+
+th[scope="col"]:nth-child(2) {
+    background-image: url('dolar.png');
+}
+
+th[scope="col"]:nth-child(3) {
+    background-image: url('yen.png');
+}
+
+th[scope="col"]:nth-child(4) {
+    background-image: url('libra.png'); 
+}
+
+
+
+
